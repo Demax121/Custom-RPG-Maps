@@ -220,7 +220,7 @@
             </div>
             <div class="row row-3 icon-box">
                 <label for="icons" class="checkpoint-input--label">Choose icon:</label>
-                <select name="icons" id="icons-menu" class="icon-menu checkpoint-input">
+                <select name="icons" id="icons-menu" class="icon-menu checkpoint-input" onchange="document.querySelector('.icon-viewer').src=`assets/markers/${this.value}`">
                     <option selected="selected" value="marker-icon-green.png">Green Mark</option>
                     <option value="skull-icon.svg">Skull</option>
                     <option value="tree-icon.svg">Tree</option>

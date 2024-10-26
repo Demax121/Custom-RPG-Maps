@@ -235,17 +235,15 @@ function addMarker() {
     inputOverlay.classList.toggle("input-required");
     return;
   }
-
   let markerCoordinates = getCords(Cords);
-  let iconMenu = document.querySelector('#icons-menu');
-  let iconView = document.querySelector('.icon-viewer');
   
+
+
+  const iconMenu = document.querySelector('#icons-menu');
   const customIcon = createCustomIcon(iconMenu.value);
-  iconMenu.addEventListener('change', ()=>{
-    iconView.src = `assets/markers/${iconMenu.value}`
-    console.log(iconMenu.value);
-  });
   
+
+
   if (uniqueNames.has(markerName) || uniqueCoordinates.has(markerCoordinates)) {
     modalAlert.querySelector(".modal-alert-title").textContent = "Marker name already exists";
     modalAlert.showModal();

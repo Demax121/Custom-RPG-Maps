@@ -9,13 +9,21 @@
 &-body{
     display: grid;
     grid-template-rows: repeat(4 1fr);
-    gap: 0.75rem;
    font-size: 0.85rem;
 }
 &-coordinates{
     font-size: 1rem;
     font-weight: 600;
 }
+
+&-input{
+    font-size: 1rem;
+    &--label{
+        display: block;
+        font-size: 1rem;
+    }
+}
+
 }
 
 .leaflet-popup-content-wrapper{
@@ -24,12 +32,30 @@
     -moz-box-shadow: 3px 14px 18px 6px rgba(0,0,0,0.46);
 }
 
-// .leaflet-popup-tip{
+.icon{
 
-// }
+&-viewer{
+    max-width: 2rem;
+    margin: 0 auto;
+}
 
-.input-label{
-    display: block;
+&-box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+}
+&-menu{
+    font-size: 1rem;
+
+    &--label{
+        font-size: 1rem;
+        
+    }
+}
+}
+
+.row{
+    margin-top: 0.5rem;
 }
 
 .dropdown-icon{
@@ -40,12 +66,14 @@
 .cbtn{ //Checkpoint buttons styling
     
     display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
-    padding: 0.25rem 0.75rem;
+    padding: 0.25rem 0.55rem;
     background: rgba(86, 106, 229, 1);
     border: none;
     color: #FFFFFF;
-    border-radius: 1rem;
+    border-radius: .45rem;
     &:hover{
         background: rgba(34, 44, 112, 1);
         text-decoration: underline;
@@ -54,11 +82,6 @@
         -moz-box-shadow: -1px 11px 14px 1px rgba(0,0,0,0.25);
     }
 }
-
-.leaflet-popup-content{
-    font-size: 1.15rem;
-}
-
 
 .name-required{
     color: rgb(201, 45, 34);

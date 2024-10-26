@@ -62,6 +62,7 @@ function rescan() {
 }
 
 
+
 const checkpointPopupTemplate = document.querySelector("#checkpoint-popup-template"); //popup template
 
 Cords.bindPopup("");//bind popup to checkpoint marker
@@ -236,8 +237,15 @@ function addMarker() {
   }
 
   let markerCoordinates = getCords(Cords);
-  let choosenIcon = document.querySelector('#icons-menu').value;
-  const customIcon = createCustomIcon(choosenIcon);
+  let iconMenu = document.querySelector('#icons-menu');
+  let iconView = document.querySelector('.icon-viewer');
+  
+  const customIcon = createCustomIcon(iconMenu.value);
+  iconMenu.addEventListener('change', ()=>{
+    iconView.src = `assets/markers/${iconMenu.value}`
+    console.log(iconMenu.value);
+  });
+  
   if (uniqueNames.has(markerName) || uniqueCoordinates.has(markerCoordinates)) {
     modalAlert.querySelector(".modal-alert-title").textContent = "Marker name already exists";
     modalAlert.showModal();
@@ -254,7 +262,7 @@ function addMarker() {
     markerName: markerName,
     coordinates: markerCoordinates,
     overlayName: overlayName,
-    markerIcon: choosenIcon,
+    markerIcon: iconMenu,
   };
   customMarkers.push(newMarker);
 

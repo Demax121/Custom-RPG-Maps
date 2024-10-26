@@ -208,27 +208,28 @@
         <div class="checkpoint-body">
             <span class="checkpoint-coordinates"></span>
             <div class="checkpoint-inputs">
-            <span>
-                <label for="markerName" class="input-label">Location name:</label>
-                <input type="text" class="markerName" name="markerName" maxlength="25">
+            <div class="row row-1">
+                <label for="markerName" class="checkpoint-input--label">Location name:</label>
+                <input type="text" class="markerName checkpoint-input" name="markerName" maxlength="25">
                 <span class="name-required ">You must provide marker name</span>
-            </span>
-            <span>
-                <label for="overlayName" class="input-label">Layer:</label>
-                <input type="text" class="overlayName" name="overlayName" maxlength="25">
+            </div>
+            <div class="row row-2">
+                <label for="overlayName" class="checkpoint-input--label">Layer:</label>
+                <input type="text" class="overlayName checkpoint-input" name="overlayName" maxlength="25">
                 <span class="layer-required">You must provide layer name</span>
-            </span>
-            <span>
-                <label for="icons" class="input-label">Choose icon:</label>
-                <select name="icons" id="icons-menu">
+            </div>
+            <div class="row row-3 icon-box">
+                <label for="icons" class="checkpoint-input--label">Choose icon:</label>
+                <select name="icons" id="icons-menu" class="icon-menu checkpoint-input">
                     <option selected="selected" value="marker-icon-green.png">Green Mark</option>
                     <option value="skull-icon.svg">Skull</option>
                     <option value="tree-icon.svg">Tree</option>
                 </select>
-            </span>
+                <img class="icon-viewer" src="assets/markers/marker-icon-green.png" alt="choosen-icon">
             </div>
-            <div class="checkpoint-controls">
-                <button type="button" class="cbtn addMarker">Add to list</button>
+            </div>
+            <div class="checkpoint-controls row row-4">
+                <button type="button" class="cbtn addMarker">Create checkpoint</button>
                 <button type="button" class="cbtn closeCords">Close</button>
             </div>
         </div>

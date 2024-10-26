@@ -39,10 +39,10 @@ const layerControl = L.control
 
 // Custom icons
 const createCustomIcon = (color) => new L.Icon({
-  iconUrl: `../assets/markers/${color}`,
-  shadowUrl: `../assets/markers/marker-shadow.png`,
-  iconSize: [35, 51],
-  iconAnchor: [12, 50],
+  iconUrl: `assets/markers/${color}`,
+  shadowUrl: `assets/markers/marker-shadow.png`,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
   popupAnchor: [1, -34],
   shadowSize: [41, 41],
 });

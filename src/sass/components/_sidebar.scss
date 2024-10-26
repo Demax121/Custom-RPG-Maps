@@ -218,8 +218,27 @@ flex-direction: row;
   }
 }
 
+.reset-view{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  
+}
 
-
+.location-description-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.pdf-viewer{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
 
 
 .fa-caret-left {

@@ -9,31 +9,23 @@
     <title>Map</title>
 </head>
 
-
 <body>
-
 
     <div id="sidebar" class="sidebar collapsed">
         <!-- Nav tabs -->
         <div class="sidebar-tabs flex-container">
             <ul role="list">
-                <li><a title="Main menu" href="#home" role="tab" class="sidebar-link"><img
-                            src="assets/icons/menu-bars.svg" alt="menu-bars"></a></li>
+                <li><a title="Main menu" href="#home" role="tab" class="sidebar-link"><img src="assets/icons/menu-bars.svg" alt="menu-bars"></a></li>
                 <li><a class="sidebar-link reset-view"><img src="assets/icons/reset-view.svg" alt="reset-view"></a></li>
-                <li><a title="Location description" href="#LocationDescription" role="tab" class="location-description sidebar-link"><img
-                    src="assets/icons/description.svg" alt="book"></a></li>
-                <li><a title="Base Markers" href="#WorldMarkers" role="tab" class="world-markers sidebar-link"><img
-                            src="assets/icons/globe.svg" alt="globe"></a></li>
-                <li><a title="Custom Markers" href="#custom-markers" role="tab" class="custom-markers sidebar-link"><img
-                            src="assets/icons/map-marker.svg" alt="map-marker"></a></li>
+                <li><a title="Location description" href="#LocationDescription" role="tab" class="location-description sidebar-link"><img src="assets/icons/description.svg" alt="book"></a></li>
+                <li><a title="Base Markers" href="#WorldMarkers" role="tab" class="world-markers sidebar-link"><img src="assets/icons/globe.svg" alt="globe"></a></li>
+                <li><a title="Custom Markers" href="#custom-markers" role="tab" class="custom-markers sidebar-link"><img src="assets/icons/map-marker.svg" alt="map-marker"></a></li>
             </ul>
             <!-- This section can be removed -->
             <ul role="list">
-                <li><a title="About" href="#info" role="tab" class="sidebar-link"><img
-                            src="assets/icons/info-circle.svg" alt="info-circle"></a></li>
-                <li><a href="https://github.com/Demax121" target="_blank" class="sidebar-link"><img
-                            src="assets/icons/github-logo.svg" alt="github-logo"></a></li>
-            </ul
+                <li><a title="About" href="#info" role="tab" class="sidebar-link"><img src="assets/icons/info-circle.svg" alt="info-circle"></a></li>
+                <li><a href="https://github.com/Demax121" target="_blank" class="sidebar-link"><img src="assets/icons/github-logo.svg" alt="github-logo"></a></li>
+            </ul>
             <!-- This section can be removed -->
         </div>
 
@@ -45,28 +37,16 @@
                     HOW IT WORKS
                     <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span>
                 </h1>
-                <h3 class="sidebar-section-title">What icons on the sidebar mean</h3>
-                <hr class="section-separate">
-                <p class="section-paragraph"><img src="assets/icons/globe.svg" alt="globe" class="showcase-icon"> The
-                    globe icon
-                    opens a tab
-                    where markers that are either fetched from a database or JSON file that is stored locally or
-                    somewhere else are
-                    displayed in the form of lists that are grouped into overlays.<br>
-                    When you click on the name of the overlay the list containing markers
-                    will appear, clicking on the marker name zooms the map onto it.</p><br><br>
-                <p class="section-paragraph"><img src="assets/icons/map-marker.svg" alt="map-marker"
-                        class="showcase-icon">
-                    The marker icon opens the custom markers tab. Those markers are created by a user
-                    and are not stored anywhere even within local or session storage.
-                    When you create new markers they are separated into corresponding overlays in a similar way as in
-                    the tab with markers fetched from the database.
-                    Those markers then can be exported either in JSON or txt format that has been already formatted for
-                    the SQL INSERT statement.
-                    The delete button deletes created marker and if the overlay list doesn`t contain any markers it is
-                    removed from the tab,
-                    the rename button allows you to rename the marker if you have decided to do so.
-
+                <h3 class="sidebar-section-title">What the icons on the sidebar mean</h3>
+                <hr class="section-separator">
+                <p class="section-paragraph"><img src="assets/icons/globe.svg" alt="globe" class="showcase-icon"> The globe icon opens a tab where markers that are either fetched from a database or a locally stored JSON file are displayed in the form of lists grouped into overlays.<br>
+                    When you click on the name of the overlay, the list containing markers will appear. Clicking on the marker name zooms the map onto it.</p><br><br>
+                <p class="section-paragraph"><img src="assets/icons/map-marker.svg" alt="map-marker" class="showcase-icon">
+                    The marker icon opens the custom markers tab. These markers are created by the user and are not stored anywhere, not even in local or session storage.
+                    When you create new markers, they are separated into corresponding overlays in a similar way as in the tab with markers fetched from the database.
+                    These markers can then be exported either in JSON or TXT format, already formatted for the SQL INSERT statement.
+                    The delete button removes the created marker, and if the overlay list doesn’t contain any markers, it is removed from the tab.
+                    The rename button allows you to rename the marker if you decide to do so.
                 </p>
             </div>
             <div class="sidebar-pane" id="WorldMarkers">
@@ -75,7 +55,6 @@
                     <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span>
                 </h1>
                 <div class="marker-list-container base-markers-container">
-
                 </div>
             </div>
             <div class="sidebar-pane" id="LocationDescription">
@@ -84,16 +63,12 @@
                     <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span>
                 </h1>
                 <div class="location-description-container">
-                    
                 </div>
-
             </div>
 
-
-            <!-- This part is for user created markers, uses customMarkers.js -->
+            <!-- This part is for user-created markers, uses customMarkers.js -->
             <div class="sidebar-pane" id="custom-markers">
-                <h1 class="sidebar-header">Your locations<span class="sidebar-close"><img
-                            src="assets/icons/caret-left.svg" alt="caret-left"></span></h1>
+                <h1 class="sidebar-header">Your Locations<span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span></h1>
 
                 <div class="button-controls">
                     <div class="col col-1">
@@ -111,8 +86,8 @@
                             Checkpoint Menu
                         </button>
                         <div class="checkpoint-menu menu">
-                            <button class="open__checkpoint btn-sidebar">Add checkpoint</button>
-                            <button class="close__checkpoint btn-sidebar">Close checkpoint</button>
+                            <button class="open__checkpoint btn-sidebar">Add Checkpoint</button>
+                            <button class="close__checkpoint btn-sidebar">Close Checkpoint</button>
                         </div>
                     </div>
                 </div>
@@ -120,21 +95,17 @@
                 <div class="marker-list-container custom-markers-container">
                 </div>
             </div>
-            <!-- This part is for user created markers, uses customMarkers.js -->
-
+            <!-- This part is for user-created markers, uses customMarkers.js -->
 
             <div class="sidebar-pane" id="info">
-                <h1 class="sidebar-header">INFORMATION<span class="sidebar-close"><img src="assets/icons/caret-left.svg"
-                            alt="caret-left" class="button-icon"></span></h1>
-                <p>Thanks for coming here. This project has been created for people who would like to host their own map
-                    website. This project mostly revolves around maps created from static images.</p>
-                <p>If you are looking for a way to create such a map from images here is my other project:
-                    <a href="https://github.com/Demax121/tileCutter-for-libvips" class="link">Libvips tile cutter</a>
-                    I have created it to make creating map tiles from images a lot simpler.
+                <h1 class="sidebar-header">INFORMATION<span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left" class="button-icon"></span></h1>
+                <p>Thank you for visiting. This project has been created for people who would like to host their own map website. This project mostly revolves around maps created from static images.</p>
+                <p>If you are looking for a way to create such a map from images, here is my other project:
+                    <a href="https://github.com/Demax121/tileCutter-for-libvips" class="link">Libvips Tile Cutter</a>
+                    I created it to make creating map tiles from images a lot simpler.
                 </p>
                 <br>
-                <p>I hope it will come in handy for you dear user. You can modify it however you want or use it as it is
-                    I hope you will like what I have done here.</p> <br><br>
+                <p>I hope it will be useful for you. You can modify it however you want or use it as it is. I hope you will like what I have done here.</p> <br><br>
                 <p>Font used: Abhaya Libre by Mooniak</p>
                 <p>Libraries and plugins: LeafletJS, leaflet-sidebarv2 by Turbo87</p>
             </div>
@@ -143,20 +114,16 @@
     <div id="map" class="sidebar-map">
     </div>
 
-
-
-
-
     <!-- Modals -->
 
     <!-- Modals for customMarkers.js -->
     <dialog class="modal modal-rename">
         <div class="modal-body">
-            <p class="modal-title">Provide new name for marker</p>
+            <p class="modal-title">Provide a new name for the marker</p>
             <input type="text" maxlength="25" class="modal-input">
-            <label for="modal-input" class="name-required-modal">Provide new name</label>
+            <label for="modal-input" class="name-required-modal">Provide a new name</label>
             <label for="modal-input" class="name-exists-modal">Marker name already exists</label>
-            <button class="btn-sidebar modal-accept">Change name</button>
+            <button class="btn-sidebar modal-accept">Change Name</button>
             <button class="btn-sidebar modal-close">Close</button>
         </div>
     </dialog>
@@ -176,7 +143,6 @@
     </dialog>
     <!-- Modals -->
 
-
     <!-- Templates section -->
 
     <template id="sidebar-layer-template">
@@ -188,11 +154,10 @@
     </template>
 
     <template id="sidebar-marker-template--base">
-        <li class="marker-list-item" data-layer=""><a href="#" class="marker-link" data-marker-id=""></a> <span
-                class="marker-info"></span></li>
+        <li class="marker-list-item" data-layer=""><a href="#" class="marker-link" data-marker-id=""></a> <span class="marker-info"></span></li>
     </template>
 
-    <!-- templates for customMarkers.js -->
+    <!-- Templates for customMarkers.js -->
     <template id="sidebar-marker-template--custom">
         <li class="marker-list-item" data-layer=""><a href="#" class="marker-link" data-marker-id=""></a>
             <div class="list-item-body"><span class="marker-info"></span>
@@ -208,36 +173,36 @@
         <div class="checkpoint-body">
             <span class="checkpoint-coordinates"></span>
             <div class="checkpoint-inputs">
-            <div class="row row-1">
-                <label for="markerName" class="checkpoint-input--label">Location name:</label>
-                <input type="text" class="markerName checkpoint-input" name="markerName" maxlength="25">
-                <span class="name-required ">You must provide marker name</span>
-            </div>
-            <div class="row row-2">
-                <label for="overlayName" class="checkpoint-input--label">Layer:</label>
-                <input type="text" class="overlayName checkpoint-input" name="overlayName" maxlength="25">
-                <span class="layer-required">You must provide layer name</span>
-            </div>
-            <div class="row row-3 icon-box">
-                <label for="icons" class="checkpoint-input--label">Choose icon:</label>
-                <select name="icons" id="icons-menu" class="icon-menu checkpoint-input" onchange="document.querySelector('.icon-viewer').src=`assets/markers/${this.value}`">
-                    <option selected="selected" value="marker-icon-green.png">Green Mark</option>
-                    <option value="skull-icon.svg">Skull</option>
-                    <option value="tree-icon.svg">Tree</option>
-                </select>
-                <img class="icon-viewer" src="assets/markers/marker-icon-green.png" alt="choosen-icon">
-            </div>
+                <div class="row row-1">
+                    <label for="markerName" class="checkpoint-input--label">Location name:</label>
+                    <input type="text" class="markerName checkpoint-input" name="markerName" maxlength="25">
+                    <span class="name-required">You must provide a marker name</span>
+                </div>
+                <div class="row row-2">
+                    <label for="overlayName" class="checkpoint-input--label">Layer:</label>
+                    <input type="text" class="overlayName checkpoint-input" name="overlayName" maxlength="25">
+                    <span class="layer-required">You must provide a layer name</span>
+                </div>
+                <div class="row row-3 icon-box">
+                    <label for="icons" class="checkpoint-input--label">Choose icon:</label>
+                    <select name="icons" id="icons-menu" class="icon-menu checkpoint-input" onchange="document.querySelector('.icon-viewer').src=`assets/markers/${this.value}`">
+                        <option selected="selected" value="marker-icon-green.png">Green Marker</option>
+                        <option value="skull-icon.svg">Skull</option>
+                        <option value="tree-icon.svg">Tree</option>
+                    </select>
+                    <img class="icon-viewer" src="assets/markers/marker-icon-green.png" alt="chosen-icon">
+                </div>
             </div>
             <div class="checkpoint-controls row row-4">
-                <button type="button" class="cbtn addMarker">Create checkpoint</button>
+                <button type="button" class="cbtn addMarker">Create Checkpoint</button>
                 <button type="button" class="cbtn closeCords">Close</button>
             </div>
         </div>
     </template>
-    <!-- template for customMarkers.js -->
+    <!-- Templates for customMarkers.js -->
     <!-- Templates section -->
 
-    <script src="leafletJS/leaflet.js"> </script>
+    <script src="leafletJS/leaflet.js"></script>
     <script src="leafletJS/leaflet-sidebar.js"></script>
 
     <script src="scripts/mapSetup.js"></script>

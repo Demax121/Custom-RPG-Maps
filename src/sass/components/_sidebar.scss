@@ -7,6 +7,10 @@
   overflow: hidden;
   z-index: 2000;
   background-color: var(--nav-crl-primary); //overall background color of sidebar
+
+  &__title{
+    font-size: 2.25rem;
+  }
 }
 
 .sidebar.collapsed {

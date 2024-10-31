@@ -2,10 +2,10 @@
 const baseMarkers = []; // Initialize an empty array to store markers fetched from the server
 const baseMarkersContainer = document.querySelector(".base-markers-container");// Select the container element where the markers will be displayed
 baseMarkersContainer.addEventListener("click", (event) => goToMarker(event, baseMarkers));// Add an event listener to the container to handle marker clicks
-const jsonUrl = "markers.json"; // URL to the JSON file containing marker data
+
 
 // Fetch the marker data from the JSON file
-fetch(jsonUrl)
+fetch(makrersURL)
     // Check if the response is ok, otherwise throw an error
   .then((response) => {
     if (!response.ok) {

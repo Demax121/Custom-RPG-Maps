@@ -1,6 +1,7 @@
 
 // Link to map tiles
-const mapPath = "maps/test/{z}/{y}/{x}.webp";
+const mapPath = "maps/test/{z}/{y}/{x}.webp"; //URL to the map tiles
+const makrersURL = "markers.json"; // URL to the JSON file containing marker data
 
 // Setting up the map layer
 const fullmap = L.tileLayer(mapPath, {

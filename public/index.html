@@ -33,10 +33,10 @@
         <div class="sidebar-content">
 
             <div class="sidebar-pane" id="home">
-                <h1 class="sidebar-header">
-                    HOW IT WORKS
+                <div class="sidebar-header">
+                    <h1 class="sidebar__title">HOW IT WORKS</h1>
                     <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span>
-                </h1>
+                </div>
                 <h3 class="sidebar-section-title">What the icons on the sidebar mean</h3>
                 <hr class="section-separator">
                 <p class="section-paragraph"><img src="assets/icons/globe.svg" alt="globe" class="showcase-icon"> The globe icon opens a tab where markers that are either fetched from a database or a locally stored JSON file are displayed in the form of lists grouped into overlays.<br>
@@ -50,25 +50,29 @@
                 </p>
             </div>
             <div class="sidebar-pane" id="WorldMarkers">
-                <h1 class="sidebar-header">
-                    World Locations
+                <div class="sidebar-header">
+                    <h1 class="sidebar__title">World Locations</h1>
                     <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span>
-                </h1>
+                </div>
                 <div class="marker-list-container base-markers-container">
                 </div>
             </div>
             <div class="sidebar-pane" id="LocationDescription">
-                <h1 class="sidebar-header">
+                <div class="sidebar-header">
                     <span class="location-name"></span>
                     <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span>
-                </h1>
+                </div>
                 <div class="location-description-container">
                 </div>
             </div>
 
             <!-- This part is for user-created markers, uses customMarkers.js -->
             <div class="sidebar-pane" id="custom-markers">
-                <h1 class="sidebar-header">Your Locations<span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span></h1>
+                <div class="sidebar-header">
+                <h1 class="sidebar__title">Your Locations</h1>
+                <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left"></span>
+                
+                </div>
 
                 <div class="button-controls">
                     <div class="col col-1">
@@ -98,7 +102,11 @@
             <!-- This part is for user-created markers, uses customMarkers.js -->
 
             <div class="sidebar-pane" id="info">
-                <h1 class="sidebar-header">INFORMATION<span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left" class="button-icon"></span></h1>
+                <div class="sidebar-header">
+                <h1 class="sidebar__title">INFORMATION</h1>
+                <span class="sidebar-close"><img src="assets/icons/caret-left.svg" alt="caret-left" class="button-icon"></span>
+                
+                </div>
                 <p>Thank you for visiting. This project has been created for people who would like to host their own map website. This project mostly revolves around maps created from static images.</p>
                 <p>If you are looking for a way to create such a map from images, here is my other project:
                     <a href="https://github.com/Demax121/tileCutter-for-libvips" class="link">Libvips Tile Cutter</a>

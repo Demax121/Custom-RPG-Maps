@@ -281,7 +281,7 @@ function addMarker() {
     markerName: markerName,
     coordinates: markerCoordinates,
     overlayName: overlayName,
-    markerIcon: iconMenu,
+    markerIcon: iconMenu.value,
   };
   customMarkers.push(newMarker);   // Add the new marker to the customMarkers array
 

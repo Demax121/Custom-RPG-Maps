@@ -32,5 +32,8 @@
         "onchange": "^7.1.0",
         "postcss-cli": "^9.1.0",
         "sass": "^1.69.5"
+    },
+    "devDependencies": {
+        "@flydotio/dockerfile": "^0.5.9"
     }
 }
